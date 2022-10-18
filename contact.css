@@ -1,0 +1,214 @@
+*{
+    font-family: 'Oxygen', 'sans-serif';
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+/* NAVBAR DECORATION */
+nav{
+    margin: 0.5%;
+    vertical-align: center;
+    color: black;
+}
+
+.navbar-brand{
+    padding: 10px;
+}
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+ul{
+    margin-right: 10%;
+    justify-content: space-evenly;
+}
+
+li{
+    padding: 10px;
+    vertical-align: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid black;
+}
+
+.active a{
+    color: orange !important;
+}
+
+.dropdown-menu{
+    border:none;
+    padding: none;
+}
+
+.contsctMEPAgeLink{
+    padding: 0;
+}
+
+.contsctMEPAgeLink a{
+    color: black;
+}
+
+.scheduleApointment{
+    padding: 0;
+    margin-left: 0;
+}
+
+
+
+
+
+.getInTouchSection{
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.getInTouchSection h1{
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.getInTouchHightlight{
+    color: orange;
+}
+
+.getInTouchSection p{
+    font-size: 15px;
+    color: grey;
+}
+
+.getInTouchList{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.contactList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contactList li{
+    list-style: none;
+}
+
+.contactList a{
+    color: black;
+    text-decoration: none;
+}
+
+.contactList a:hover{
+    color: orange;
+}
+
+.contactFormSection{
+    margin-top: 5%;
+    width: 100%;
+}
+
+.contactForm{
+    margin: 0 auto;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contactForm input, textarea{
+    margin: 2%;
+    padding: 10px;
+}
+
+input::placeholder{
+    color: orange;
+    opacity: 0.7;
+}
+
+textarea::placeholder{
+    color: orange;
+    opacity: 0.7;
+}
+
+.contactForm button{
+    width: 30%;
+    margin-left: 2%;
+    padding: 6px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-top: 1%;
+}
+
+
+
+
+footer{
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+
+
+/* MEDEA QUERIES */
+@media screen and (max-width:767px){
+
+.getInTouchSection{
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.getInTouchSection h1{
+    font-size: 50px;
+}
+
+.getInTouchList{
+    margin-top: 10%;
+}
+
+.contactList{
+    margin-right: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactFormSection{
+    margin-top: 10%;
+    width: 100%;
+}
+
+.contactForm{
+    margin: 0 auto;
+    width: 95%;
+}
+
+.contactForm input{
+    border: 0.5px solid black;
+}
+
+.contactForm textarea{
+    border: 0.5px solid black;
+}
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0; /* stick to bottom */
+}
+}

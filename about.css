@@ -1,0 +1,194 @@
+*{
+    font-family: 'Oxygen', 'sans-serif';
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* NAVBAR DECORATION */
+nav{
+    margin: 0.5%;
+    vertical-align: center;
+    color: black;
+}
+
+.navbar-brand{
+    padding: 10px;
+}
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+ul{
+    margin-right: 10%;
+    justify-content: space-evenly;
+}
+
+li{
+    padding: 10px;
+    vertical-align: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid black;
+}
+
+.active a{
+    color: orange !important;
+}
+
+.dropdown-menu{
+    border:none;
+    padding: none;
+}
+
+.contsctMEPAgeLink{
+    padding: 0;
+}
+
+.scheduleApointment{
+    padding: 0;
+    margin-left: 0;
+}
+
+
+
+
+
+/* ABOUT SECTION DECORATION */
+.aboutSection{
+    margin: 5% 5% 0 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.aboutText{
+    text-align: center;
+    padding: 15px;
+}
+
+.aboutText h1{
+    font-size: 70px;
+    color: orange;
+    margin-bottom: 5%;
+}
+
+.aboutParagraphText{
+    padding: 10px;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+.highlightInOrange{
+    color: orange;
+}
+
+.aboutPicture{
+    width: 110%;
+}
+
+.aboutPicture img{
+    width: 110%;
+    height: 100%;
+    margin: -5% 0 0 -10%;
+}
+
+.whymeSection{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.whymeHeader h1{
+    color: orange;
+    font-size: 70px;
+    text-align: left;
+    margin-left: 11%;
+}
+
+.whymeResons ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4%;
+}
+
+.whymeResons li{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+
+
+footer{
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+
+
+/* MEDEA QUERIES */
+@media screen and (max-width:767px){
+    /* ABOUT SECTION DECORATION */
+.aboutSection{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.aboutText{
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.aboutText h1{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.whymeSection{
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.whymeHeader{
+    margin-top: 10%;
+    margin-bottom: -2%;
+}
+
+.whymeHeader h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.whymeResons ul{
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+footer{
+    margin-top: 20%;
+}
+}

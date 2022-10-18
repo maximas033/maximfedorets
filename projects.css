@@ -1,0 +1,205 @@
+*{
+    font-family: 'Oxygen', 'sans-serif';
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+/* NAVBAR DECORATION */
+nav{
+    margin: 0.5%;
+    vertical-align: center;
+    color: black;
+}
+
+.navbar-brand{
+    padding: 10px;
+}
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+ul{
+    margin-right: 10%;
+    justify-content: space-evenly;
+}
+
+li{
+    padding: 10px;
+    vertical-align: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid black;
+}
+
+.active a{
+    color: orange !important;
+}
+
+.dropdown-menu{
+    border:none;
+    padding: none;
+}
+
+.contsctMEPAgeLink{
+    padding: 0;
+}
+
+.scheduleApointment{
+    padding: 0;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+.myworkSection{
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.myworkSection h1{
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.myWorkHighlight{
+    color: orange;
+}
+
+.myprojects{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cardCornerstone, .cardDanielK {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+  }
+
+.cardCornerstone:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardDanielK:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.container{
+    padding: 2px 16px;
+}
+
+.container h4{
+    margin-top: 2%;
+}
+
+.container p{
+    padding: 10px 10px 10px 0;
+}
+
+.container .online{
+    color: white;
+    width: 20%;
+    color: green;
+}
+.container .not{
+    width: 35%;
+    color: red;
+}
+
+.container .upcoming{
+    width: 30%;
+    color: rgba(27, 100, 209, 0.911);
+}
+
+.visitButton{
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid orange;
+    color: orange;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 5%;
+}
+
+.visitButton:hover{
+    color: white;
+    background-color: orange;
+    -webkit-transition: all 1s ease;
+    transition: all 0.8s ease;
+}
+
+
+
+
+footer{
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* MEDEA QUERIES */
+@media screen and (max-width:767px){
+
+.myworkSection{
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.myworkSection h1{
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+    
+.myprojects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.myprojects .cardCornerstone{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.cardCornerstone .online{
+    width: 50%;
+}
+
+.myprojects .cardDanielK{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.cardDanielK .not{
+    width: 50%;
+}
+}
