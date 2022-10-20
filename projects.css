@@ -116,7 +116,7 @@ li{
 
 .container .online{
     color: white;
-    width: 20%;
+    width: 30%;
     color: green;
 }
 .container .not{
@@ -127,6 +127,11 @@ li{
 .container .upcoming{
     width: 30%;
     color: rgba(27, 100, 209, 0.911);
+}
+
+.container .editing{
+    width: 40%;
+    color: orange;
 }
 
 .visitButton{
