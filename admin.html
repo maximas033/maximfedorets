@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
-    <title>Maxim Fedorets | LOGIN</title>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <title>Maxim Fedorets | ADMIN</title>
   </head>
   <body>
     <!-- BOOTSTRAP NAVBAR FOR THE PAGE -->
@@ -50,26 +52,6 @@
             <li class="nav-item">
               <a class="nav-link" href="projectsActive.html">PROJECTS</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                MORE
-              </a>
-              <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li class="contsctMEPAgeLink">
-                  <a class="dropdown-item" href="contact.html">CONTACT</a>
-                </li>
-                <li class="contsctMEPAgeLink active">
-                  <a class="dropdown-item" href="login.html">LOGIN</a>
-                </li>
-              </ul> -->
-            </li>
             <li class="nav-item logoutB">
               <a
                 class="nav-link"
@@ -84,6 +66,40 @@
       </div>
     </nav>
 
+    <section id="time">
+      <div>
+        <h3 id="Displaytime"></h3>
+      </div>
+      <div>
+        <p id="quote"></p>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h1 id="headerAdd">Add a project</h1>
+        <p id="alert"></p>
+      </div>
+
+      <div id="AddProjectForm">
+        <input
+          type="text"
+          placeholder="Clients Name"
+          id="PersonName"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Project Name"
+          id="ProjectName"
+          required
+        />
+        <input type="date" id="ProjectStartDate" required />
+        <input type="date" id="ProjectDueDate" required />
+        <textarea placeholder="Notes" id="Projectnotes"></textarea>
+        <button onclick="AddProject(event)">Submit</button>
+      </div>
+    </section>
     <!-- PAGE FOOTER -->
     <footer>
       <p>Maxim Fedorets</p>
@@ -110,6 +126,8 @@
     <script src="contact.js"></script>
     <script src="login.js"></script>
     <script src="firebase.js"></script>
+    <script src="admininformation.js"></script>
+    <script src="adminAddProject.js"></script>
     <script src="https://unpkg.com/kursor"></script>
     <!-- CURSOR COLOR -->
     <script>
