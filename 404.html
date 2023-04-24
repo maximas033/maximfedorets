@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found</title>
+    <style>
+      /* Add your CSS styles here */
+      #error-container {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        font-size: 5rem;
+        color: #ff5252;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      #go-back-btn {
+        background-color: orange;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      #go-back-btn:hover {
+        background-color: rgb(206, 136, 6);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="error-container">
+      <h1>404</h1>
+      <p>Page not found</p>
+      <button id="go-back-btn">Go Back</button>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const goBackBtn = document.getElementById("go-back-btn");
+
+        goBackBtn.addEventListener("click", () => {
+          window.history.back();
+        });
+      });
+    </script>
+  </body>
+</html>
