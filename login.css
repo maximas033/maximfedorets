@@ -1,0 +1,43 @@
+#loginForm {
+  margin: 0 auto;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#loginForm h1 {
+  margin-bottom: 3%;
+  font-size: 50px;
+}
+
+#loginForm #inputFields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#loginForm input {
+  border: 0.5px solid black;
+  padding: 10px;
+  margin-bottom: 3%;
+}
+
+#loginForm button {
+  padding: 6px;
+  background-color: orange;
+  color: white;
+  border: none;
+  margin-top: 1%;
+  width: 20%;
+  padding: 10px;
+  border-radius: 3%;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0; /* stick to bottom */
+}

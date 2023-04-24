@@ -1,5 +1,3 @@
-<!-- DESIGNED / CREATED BY MAXIM FEDORETS -->
-<!-- USING BOOTSTRAP, HTML, CSS, JAVASCRIPT, AND MANY MORE TOOLS -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +12,8 @@
       crossorigin="anonymous"
     />
     <!-- LINK TO CSS-->
-    <link href="about.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="login.css" rel="stylesheet" type="text/css" />
     <!-- LINK TO GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +22,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
-    <title>Maxim Fedorets | About</title>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <title>Maxim Fedorets | LOGIN</title>
   </head>
   <body>
     <!-- BOOTSTRAP NAVBAR FOR THE PAGE -->
@@ -41,11 +42,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbarList">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0"
+            id="navbarList"
+            onclick="myFunction(event)"
+          >
             <li class="nav-item">
               <a class="nav-link" href="index.html">HOME</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="about.html">ABOUT</a>
             </li>
             <li class="nav-item">
@@ -66,12 +71,12 @@
                 <li class="contsctMEPAgeLink">
                   <a class="dropdown-item" href="contact.html">CONTACT</a>
                 </li>
-                <li class="contsctMEPAgeLink">
+                <li class="contsctMEPAgeLink active">
                   <a class="dropdown-item" href="login.html">LOGIN</a>
                 </li>
-                <!--<li class="scheduleApointment">
+                <!-- <li class="scheduleApointment">
                     <a class="dropdown-item" href="https://squareup.com/appointments/book/9dl781u8ajmf79/LG3BKPDRXPD23/services" target="_blank">SCHEDULE APPOINTMENT</a>
-                  </li>-->
+                  </li> -->
               </ul>
             </li>
           </ul>
@@ -79,39 +84,26 @@
       </div>
     </nav>
 
-    <!-- WELCOME SECTION, CONTAINS: HEADER AND A PICTURE-->
-    <section class="aboutSection" id="aS">
-      <div class="aboutText" id="aT">
-        <h1 class="name">About Me</h1>
-        <p class="aboutParagraphText">
-          My name is Max Fedorets, I'm a dedicated and motivated
-          <span class="highlightInOrange">Front-End Web Developer</span> base in
-          Tacoma WA. From designing the prototypes in Figma to all the lines of
-          code on a website, I love to combime the words of logic and creativity
-          to create astonishing, user friendly, assessable websites.
-        </p>
-      </div>
-      <div class="aboutPicture" id="wP">
-        <img src="aboutPicture.png" alt="Maxim Fedorets (DEVELOPER)" />
-      </div>
+    <section id="loginForm">
+      <form>
+        <div>
+          <h1>Login</h1>
+          <div id="errorMessage"></div>
+        </div>
+        <div id="inputFields">
+          <input type="email" placeholder="Email" id="loginEmail" required />
+          <input
+            type="password"
+            placeholder="Password"
+            id="loginPassword"
+            required
+          />
+          <button onclick="personalLogin(event)">Login</button>
+        </div>
+      </form>
     </section>
 
-    <section class="whymeSection" id="wM">
-      <div class="whymeHeader">
-        <h1>Why Me?</h1>
-      </div>
-
-      <div class="whymeResons">
-        <ul>
-          <li>Dedicated</li>
-          <li>Motivated</li>
-          <li>Consistant</li>
-          <li>Easy to Reach</li>
-          <li>Clear communicator</li>
-        </ul>
-      </div>
-    </section>
-
+    <!-- PAGE FOOTER -->
     <footer>
       <p>Maxim Fedorets</p>
       <p>
@@ -133,8 +125,11 @@
       crossorigin="anonymous"
     ></script>
     <!-- LINK TO JAVASCRIPT -->
-    <script src="about.js"></script>
+    <script src="contact.js"></script>
+    <script src="firebase.js"></script>
+    <script src="login.js"></script>
     <script src="https://unpkg.com/kursor"></script>
+    <!-- CURSOR COLOR -->
     <script>
       new kursor({
         type: 1,

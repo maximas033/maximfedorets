@@ -1,242 +1,301 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- REQUIRED META TAGS -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- BOOTSTRAP CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <!-- LINK TO CSS-->
-    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="index.css" rel="stylesheet" type="text/css" />
     <!-- LINK TO GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <title>Maxim Fedorets | HOME</title>
   </head>
   <body>
-   
-
-<!-- BOOTSTRAP NAVBAR FOR THE PAGE -->
+    <!-- BOOTSTRAP NAVBAR FOR THE PAGE -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbarList" onclick="myFunction(event)">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">PROJECTS</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  MORE
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li class="contsctMEPAgeLink">
-                    <a class="dropdown-item" href="contact.html">CONTACT</a>
-                  </li>
-                 <!-- <li class="scheduleApointment">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0"
+            id="navbarList"
+            onclick="myFunction(event)"
+          >
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">PROJECTS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                MORE
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="contsctMEPAgeLink">
+                  <a class="dropdown-item" href="contact.html">CONTACT</a>
+                </li>
+                <li class="contsctMEPAgeLink">
+                  <a class="dropdown-item" href="login.html">LOGIN</a>
+                </li>
+                <!-- <li class="scheduleApointment">
                     <a class="dropdown-item" href="https://squareup.com/appointments/book/9dl781u8ajmf79/LG3BKPDRXPD23/services" target="_blank">SCHEDULE APPOINTMENT</a>
                   </li> -->
-                </ul>
-              </li>
-            </ul>
-          </div>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-
-
-
-<!-- WELCOME SECTION, CONTAINS: HEADER AND A PICTURE-->
-      <section class="welcomeSection" id="wS">
-        <div class="welcomeText" id="wT">
-            <h1>Hey! I Am</h1>
-            <h1 class="name">Maxim Fedorets</h1>
-            <p class="welcomeParagraph">A Front-End Web Developer who loves to create new applications with passion</p>
-            <a href="contact.html">
-              <button type="button" class="contactNowButton">CONTACT NOW</button>
-            </a>
-        </div>
-
-        <div class="welcomePicture" id="wP">
-            <img src="welcomeHeaderPicture.png" alt="Maxim Fedorets (DEVELOPER)" width="600px" height="400px">
-        </div>
-      </section>
-
-
-<!-- SCROOL DOWN Arrow -->
-      <section id="scroolArrow" class="demo">
-        <a href="#sS">
-        <div id="scroll-down-animation">
-            <span class="mouse">
-              <span class="move"></span>
-            </span>
-            <h2>Scroll down</h2>
-          </div>
+    <!-- WELCOME SECTION, CONTAINS: HEADER AND A PICTURE-->
+    <section class="welcomeSection" id="wS">
+      <div class="welcomeText" id="wT">
+        <h1>Hey! I Am</h1>
+        <h1 class="name">Maxim Fedorets</h1>
+        <p class="welcomeParagraph">
+          A Front-End Web Developer who loves to create new applications with
+          passion
+        </p>
+        <a href="contact.html">
+          <button type="button" class="contactNowButton">CONTACT NOW</button>
         </a>
-      </section>
+      </div>
 
+      <div class="welcomePicture" id="wP">
+        <img
+          src="welcomeHeaderPicture.png"
+          alt="Maxim Fedorets (DEVELOPER)"
+          width="600px"
+          height="400px"
+        />
+      </div>
+    </section>
 
-
-<!-- MY SERVISES SECTION -->
-      <section class="servicesSection" id="sS">
-        <!-- SERVICES HEADER -->
-        <div class="serviceParagraph">
-           <h2>My <span class="servicesText">Services</span></h2>
+    <!-- SCROOL DOWN Arrow -->
+    <section id="scroolArrow" class="demo">
+      <a href="#sS">
+        <div id="scroll-down-animation">
+          <span class="mouse">
+            <span class="move"></span>
+          </span>
+          <h2>Scroll down</h2>
         </div>
-        <!-- SERVICES CARDS -->
-        <div class="servisceCards">
-            <!-- CARD #1 -->
-                
-            <div class="card">
-                <div class="imgBx">
-                  <img src="design.jpg" alt="DEVELOP"/>
-                </div>
-                <div class="content">
-                  <div class="details">
-                    <h2>Design</h2>
-                  </div>
-                    <div class="cardParagraph">
-                        <p>Designing a stunning and responsive website for you.</p>
-                    </div>
-                </div>
-              </div>
+      </a>
+    </section>
 
-            <!-- CARD #2-->
-              <div class="card">
-                <div class="imgBx">
-                  <img src="develop.jpg" alt="DEVELOP"/>
-                </div>
-                <div class="content">
-                  <div class="details">
-                    <h2>Develop</h2>
-                  </div>
-                    <div class="cardParagraph">
-                    <p>Developing a website that fits your needs and the looks.</p>
-                    </div>
-                </div>
-              </div>
+    <!-- MY SERVISES SECTION -->
+    <section class="servicesSection" id="sS">
+      <!-- SERVICES HEADER -->
+      <div class="serviceParagraph">
+        <h2>My <span class="servicesText">Services</span></h2>
+      </div>
+      <!-- SERVICES CARDS -->
+      <div class="servisceCards">
+        <!-- CARD #1 -->
 
-
-
-            <!-- CARD #3-->
-              <div class="card">
-                <div class="imgBx">
-                  <img src="code.jpg" alt="DEVELOP"/>
-                </div>
-                <div class="content">
-                  <div class="details">
-                    <h2>Code</h2>
-                  </div>
-                    <div class="cardParagraph">
-                        <p>Providing a code that can be re-written and adjusted to your needs.</p>
-                    </div>
-                </div>
-              </div>
-        </div>
-      </section>
-
-
-
-
-
-<!-- MY SKILL SECTION -->
-      <section class="skillsSection" id="skS">
-    <!-- SKILL HEADER-->
-        <div class="skillsParagraph">
-            <h2>My <span class="servicesText">Skills</span></h2>
-        </div>
-    <!-- SKILLS LIST -->
-        <div class="skillsList">
-            <div class="skills">
-
-                  <div class="skill" id="html">
-                    <span class="title">HTML 5</span>
-                    <div class="progress-bar">
-                      <div class="progress"></div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill" id="css">
-                    <span class="title">CSS 3</span>
-                    <div class="progress-bar">
-                      <div class="progress"></div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill" id="js">
-                    <span class="title">JavaScript ES6</span>
-                    <div class="progress-bar">
-                      <div class="progress"></div>
-                    </div>
-                  </div>
-
-                <div class="skill" id="bootstrap">
-                    <span class="title">Bootstrap</span>
-                    <div class="progress-bar">
-                      <div class="progress"></div>
-                    </div>
-                  </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="design.jpg" alt="DEVELOP" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Design</h2>
             </div>
+            <div class="cardParagraph">
+              <p>Designing a stunning and responsive website for you.</p>
+            </div>
+          </div>
         </div>
-      </section>
 
+        <!-- CARD #2-->
+        <div class="card">
+          <div class="imgBx">
+            <img src="develop.jpg" alt="DEVELOP" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Develop</h2>
+            </div>
+            <div class="cardParagraph">
+              <p>Developing a website that fits your needs and the looks.</p>
+            </div>
+          </div>
+        </div>
 
+        <!-- CARD #3-->
+        <div class="card">
+          <div class="imgBx">
+            <img src="code.jpg" alt="DEVELOP" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Code</h2>
+            </div>
+            <div class="cardParagraph">
+              <p>
+                Providing a code that can be re-written and adjusted to your
+                needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-      <section class="contactSection" id="cS">
-          <div class="contactHeader">
-            <h2>Want to <span class="contactText">Collaborate</span></h2>
+    <!-- MY SKILL SECTION -->
+    <section class="skillsSection" id="skS">
+      <!-- SKILL HEADER-->
+      <div class="skillsParagraph">
+        <h2>My <span class="servicesText">Skills</span></h2>
+      </div>
+      <!-- SKILLS LIST -->
+      <div class="skillsList">
+        <div class="skills">
+          <div class="skill" id="html">
+            <span class="title">HTML 5</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
           </div>
 
-          <div class="contactParagraph">
-              <p>Feel free to contact me. I am always open to disscuss new projects, bright ideas, or even answer your personal questions.</p>
-
-              <!-- INPUT FIELDS -->
-              <form class="contactForm" action="https://formspree.io/f/xgedqkny" method="POST">
-                <input type="text" class="name" placeholder="Full Name" name="FullName" required>
-                <input type="text" class="email" placeholder="Email" name="Email"required>
-                <textarea type="text" class="message" placeholder="Your Message" name="Message" required></textarea>
-                <button type="submit" value="submit" class="contactSubmit" onclick="clearValues()">SUBMIT</button>
-            </form>
+          <div class="skill" id="css">
+            <span class="title">CSS 3</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
           </div>
 
-      </section>
+          <div class="skill" id="js">
+            <span class="title">JavaScript ES6</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
 
+          <div class="skill" id="bootstrap">
+            <span class="title">Bootstrap</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="contactSection" id="cS">
+      <div class="contactHeader">
+        <h2>Want to <span class="contactText">Collaborate</span></h2>
+      </div>
 
+      <div class="contactParagraph">
+        <p>
+          Feel free to contact me. I am always open to disscuss new projects,
+          bright ideas, or even answer your personal questions.
+        </p>
 
+        <!-- INPUT FIELDS -->
+        <form
+          class="contactForm"
+          action="https://formspree.io/f/xgedqkny"
+          method="POST"
+        >
+          <input
+            type="text"
+            class="name"
+            placeholder="Full Name"
+            name="FullName"
+            required
+          />
+          <input
+            type="text"
+            class="email"
+            placeholder="Email"
+            name="Email"
+            required
+          />
+          <textarea
+            type="text"
+            class="message"
+            placeholder="Your Message"
+            name="Message"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            value="submit"
+            class="contactSubmit"
+            onclick="clearValues()"
+          >
+            SUBMIT
+          </button>
+        </form>
+      </div>
+    </section>
 
-      <footer>
-        <p>Maxim Fedorets</p>
-        <p> Copyright © 2020-<script>document.write(new Date().getFullYear())</script></p>
-      </footer>
+    <!-- PAGE FOOTER -->
+    <footer>
+      <p>Maxim Fedorets</p>
+      <p>
+        Copyright © 2020-
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </p>
+    </footer>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
     <!-- LINK TO JAVASCRIPT -->
-    <script src="index.js"></script>
     <script src="contact.js"></script>
     <script src="https://unpkg.com/kursor"></script>
-   <script>
-       new kursor({
-           type: 1,
-           color: '#000'
-       })
-   </script>
+    <!-- CURSOR COLOR -->
+    <script>
+      new kursor({
+        type: 1,
+        color: "#000",
+      });
+    </script>
   </body>
 </html>
