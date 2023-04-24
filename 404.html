@@ -12,10 +12,7 @@
       }
       h1 {
         font-size: 5rem;
-        color: #ff5252;
-      }
-      p {
-        font-size: 1.5rem;
+        color: #000000;
       }
       #go-back-btn {
         background-color: orange;
@@ -26,6 +23,7 @@
         font-size: 1rem;
         cursor: pointer;
         transition: background-color 0.3s;
+        border-radius: 3%;
       }
       #go-back-btn:hover {
         background-color: rgb(206, 136, 6);
@@ -35,7 +33,12 @@
   <body>
     <div id="error-container">
       <h1>404</h1>
-      <p>Page not found</p>
+      <h3 style="font-weight: bold">
+        Sorry, but it looks like the page you're looking for doesn't exist or
+        has been moved. We apologize for the inconvenience.
+      </h3>
+
+      <p>Thank you for your patience and understanding.</p>
       <button id="go-back-btn">Go Back</button>
     </div>
     <script>
