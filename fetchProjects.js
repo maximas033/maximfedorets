@@ -72,7 +72,7 @@ function createInputSection(project, updateProjectStatus) {
 
   const button = document.createElement("button");
   button.setAttribute("type", "submit");
-  button.classList.add("btn", "btn-primary");
+  button.classList.add("btn", "btn-success");
   button.textContent = "Save";
   inputGroup.appendChild(button);
 
