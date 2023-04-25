@@ -84,6 +84,19 @@ function fetchProjects() {
     button.textContent = "Save";
     inputGroup.appendChild(button);
 
+    const deleteButton = document.createElement("button");
+    deleteButton.classList.add("btn", "btn-danger", "mt-2");
+    deleteButton.textContent = "Delete";
+    cardBody.appendChild(deleteButton);
+
+    deleteButton.addEventListener("click", () => {
+      const projectRef = firebase.database().ref(`Projects/${project.key}`);
+      projectRef
+        .remove()
+        .then(() => console.log("Project deleted successfully."))
+        .catch((error) => console.log("Error deleting project:", error));
+    });
+
     return card;
   }
 

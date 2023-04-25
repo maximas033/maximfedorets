@@ -1,3 +1,35 @@
 #projectsHeading {
   text-align: center;
 }
+
+#project-list {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  #allprojects {
+    margin-top: 5%;
+    width: 100%;
+    align-items: center;
+  }
+
+  #allprojects .container {
+    padding: 0;
+  }
+  #project-list {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .row {
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+  }
+}

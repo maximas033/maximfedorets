@@ -13,8 +13,8 @@
     />
     <!-- LINK TO CSS-->
     <link href="index.css" rel="stylesheet" type="text/css" />
-    <link href="projectActive.css" rel="stylesheet" type="text/css" />
     <link href="admin.css" rel="stylesheet" type="text/css" />
+    <link href="projectActive.css" rel="stylesheet" type="text/css" />
     <!-- LINK TO GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,24 +27,10 @@
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
-    <!-- BOOTSTRAP LINKS-->
-    <!-- Add Bootstrap CSS and JS files -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
-      integrity="sha512-fdV7gMYSquPwYYfLbfHtDyMTM1vUGJFzgi8KTcwCPNnIpBS+DJvKjWkPS8dz79JBFQMteyQNZ0+Wl18fWIxHew=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.bundle.min.js"
-      integrity="sha512-SmPiuS32P9XECb2icZiU4q3U4v1/F+zMaW8Ia6ICoSTY2fywwnX9ZhMeGbM5p5h5rxGn0/mfRFwRsXBXTahrg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <title>Maxim Fedorets | POJECTS</title>
   </head>
   <body>
+    <!-- BOOTSTRAP NAVBAR FOR THE PAGE -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
         <button
@@ -81,21 +67,27 @@
       </div>
     </nav>
 
-    <!-- Section with all projects-->
     <section id="projectsHeading">
       <div>
         <h1>P R O J E C T S</h1>
       </div>
     </section>
 
-    <section>
+    <section id="allprojects">
       <div class="container">
-        <div class="row" id="project-list">
-          <!-- Projects will be added here dynamically -->
-        </div>
+        <div class="row" id="project-list"></div>
       </div>
     </section>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
     <script src="firebase.js"></script>
     <script src="fetchProjects.js"></script>
     <script src="https://unpkg.com/kursor"></script>
