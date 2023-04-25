@@ -123,7 +123,7 @@ function displayProjects(projects, projectList, updateProjectStatus) {
     const noProjects = document.createElement("p");
     noProjects.classList.add("text-center", "mt-3");
     noProjects.textContent = "No projects found.";
-    noProjects.style.color = "black";
+    noProjects.style.color = "red";
     projectList.appendChild(noProjects);
   } else {
     projects.forEach((project) => {
@@ -157,8 +157,10 @@ function updateProjectStatus(projectKey, newStatus) {
   projectRef.update({ projectStatus: newStatus }, function (error) {
     if (error) {
       console.log("Error updating project status:", error);
+      alert(`Error updating project status:`, error);
     } else {
       console.log("Project status updated successfully.");
+      alert("Project status updated successfully.");
     }
   });
 }
