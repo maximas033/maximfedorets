@@ -7,9 +7,13 @@
   font-weight: lighter;
 }
 
+#quote {
+  color: grey;
+}
+
 #headerAdd {
   text-align: center;
-  margin-top: 4%;
+  margin-top: 1%;
 }
 
 #alert_success {
