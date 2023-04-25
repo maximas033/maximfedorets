@@ -6,21 +6,39 @@ function AddProject(event) {
   var projectEndDate = document.getElementById("ProjectDueDate").value;
   var Projectnotes = document.getElementById("Projectnotes").value;
 
-  // add this information to a firestore database
-  firebase.database().ref("Projects").push({
-    clientsName: clientsNAme,
-    projectName: projectName,
-    projectStartDate: projectStartDate,
-    projectEndDate: projectEndDate,
-    projectnotes: Projectnotes,
-  });
+  // check if fields are empty
+  if (
+    clientsNAme == "" ||
+    projectName == "" ||
+    projectStartDate == "" ||
+    projectEndDate == "" ||
+    Projectnotes == ""
+  ) {
+    console.log("empty fields");
+    var alert = document.getElementById("alert_danger");
+    alert.style.display = "block";
+    alert.innerHTML = "Fill all fields up!";
+    setTimeout(function () {
+      document.getElementById("alert_danger").style.display = "none";
+    }, 3000);
+    return;
+  } else {
+    // add this information to a firestore database
+    firebase.database().ref("Projects").push({
+      clientsName: clientsNAme,
+      projectName: projectName,
+      projectStartDate: projectStartDate,
+      projectEndDate: projectEndDate,
+      projectnotes: Projectnotes,
+    });
+  }
 
   // success alert
-  var alert = document.getElementById("alert");
-  alert.innerHTML = "Project added";
-  alert.style.color = "green";
+  var alert = document.getElementById("alert_success");
+  alert.style.display = "block";
+  alert.innerHTML = "Project successfully added";
   setTimeout(function () {
-    alert.innerHTML = "";
+    document.getElementById("alert_success").style.display = "none";
   }, 3000);
 
   // clear inputs

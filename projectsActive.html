@@ -13,6 +13,7 @@
     />
     <!-- LINK TO CSS-->
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="projectActive.css" rel="stylesheet" type="text/css" />
     <link href="admin.css" rel="stylesheet" type="text/css" />
     <!-- LINK TO GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,6 +27,21 @@
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <!-- BOOTSTRAP LINKS-->
+    <!-- Add Bootstrap CSS and JS files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+      integrity="sha512-fdV7gMYSquPwYYfLbfHtDyMTM1vUGJFzgi8KTcwCPNnIpBS+DJvKjWkPS8dz79JBFQMteyQNZ0+Wl18fWIxHew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.bundle.min.js"
+      integrity="sha512-SmPiuS32P9XECb2icZiU4q3U4v1/F+zMaW8Ia6ICoSTY2fywwnX9ZhMeGbM5p5h5rxGn0/mfRFwRsXBXTahrg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Maxim Fedorets | POJECTS</title>
   </head>
   <body>
@@ -64,5 +80,30 @@
         </div>
       </div>
     </nav>
+
+    <!-- Section with all projects-->
+    <section id="projectsHeading">
+      <div>
+        <h1>P R O J E C T S</h1>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row" id="project-list">
+          <!-- Projects will be added here dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <script src="firebase.js"></script>
+    <script src="fetchProjects.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+      new kursor({
+        type: 1,
+        color: "#000",
+      });
+    </script>
   </body>
 </html>
