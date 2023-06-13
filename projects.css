@@ -115,26 +115,6 @@ li{
     padding: 10px 10px 10px 0;
 }
 
-.container .online{
-    color: white;
-    width: 30%;
-    color: green;
-}
-.container .not{
-    width: 35%;
-    color: red;
-}
-
-.container .upcoming{
-    width: 30%;
-    color: rgba(27, 100, 209, 0.911);
-}
-
-.container .editing{
-    width: 40%;
-    color: orange;
-}
-
 .visitButton{
     align-items: center;
     text-align: center;
@@ -208,4 +188,8 @@ footer{
 .cardDanielK .not{
     width: 50%;
 }
+}
+
+#linkToTheWebsite{
+    display: none;
 }
