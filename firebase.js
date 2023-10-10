@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDaYu_JK1xpHQwgZhzS7Zkilus4IeTB7dk",
-  authDomain: "website-login-21e47.firebaseapp.com",
-  projectId: "website-login-21e47",
-  storageBucket: "website-login-21e47.appspot.com",
-  messagingSenderId: "718768494523",
-  appId: "1:718768494523:web:67e75dcfca44c49079169e",
-  measurementId: "G-D1M7T241GB",
+  apiKey: "AIzaSyCMMJhVEo7h9uXB9SrHukRpw3h4sLQe-xY",
+  authDomain: "maxim-fedorets-website.firebaseapp.com",
+  projectId: "maxim-fedorets-website",
+  storageBucket: "maxim-fedorets-website.appspot.com",
+  messagingSenderId: "73221325835",
+  appId: "1:73221325835:web:84ef413958ee76a46b330e",
+  measurementId: "G-R68BJND4Y8"
 };
 
 // Initialize Firebase
