@@ -10,10 +10,13 @@ body{
 }
 /* NAVBAR DECORATION */
 nav{
-    margin: 0.5%;
+    margin: 0.5% 5.5%;
     vertical-align: center;
     color: black;
+    background-color: rgb(255, 243, 223);
+    border-radius: 15px;
 }
+
 
 .navbar-brand{
     padding: 10px;
@@ -70,7 +73,7 @@ li{
 
 
 .getInTouchSection{
-    margin-top: 2%;
+    margin-top: 10%;
     width: 100%;
     text-align: center;
 }
@@ -95,10 +98,9 @@ li{
 }
 
 .contactList{
-   /* display: flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;*/
-    text-align:center
+    justify-content: space-evenly;
 }
 
 .contactList li{
@@ -166,51 +168,64 @@ footer{
 
 /* MEDEA QUERIES */
 @media screen and (max-width:767px){
+    *{
+        font-family: 'Oxygen', 'sans-serif';
+        scroll-behavior: smooth;
+    }
 
-.getInTouchSection{
-    margin-top: 10%;
-    width: 100%;
-    text-align: center;
-}
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
 
-.getInTouchSection h1{
-    font-size: 50px;
-}
+    nav{
+        margin: 1% 1%;
+    }
 
-.getInTouchList{
-    margin-top: 10%;
-}
+    .getInTouchSection{
+        margin-top: 20%;
+        width: 100%;
+        text-align: center;
+    }
 
-.contactList{
-    margin-right: 0;
-    padding-left: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    .getInTouchSection h1{
+        font-size: 50px;
+    }
 
-.contactFormSection{
-    margin-top: 10%;
-    width: 100%;
-}
+    .getInTouchList{
+        margin-top: 10%;
+    }
 
-.contactForm{
-    margin: 0 auto;
-    width: 95%;
-}
+    .contactList{
+        margin-right: 0;
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.contactForm input{
-    border: 0.5px solid black;
-}
+    .contactFormSection{
+        margin-top: 10%;
+        width: 100%;
+    }
 
-.contactForm textarea{
-    border: 0.5px solid black;
-}
+    .contactForm{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .contactForm input{
+        border: 0.5px solid black;
+    }
+
+    .contactForm textarea{
+        border: 0.5px solid black;
+    }
 
 
-footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0; /* stick to bottom */
-}
+    footer{
+        position: absolute;
+        width: 100%;
+        bottom: 0; /* stick to bottom */
+    }
 }

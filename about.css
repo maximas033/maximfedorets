@@ -11,14 +11,17 @@ body{
 
 /* NAVBAR DECORATION */
 nav{
-    margin: 0.5%;
+    margin: 0.5% 5.5%;
     vertical-align: center;
     color: black;
+    background-color: rgb(255, 243, 223);
+    border-radius: 15px;
 }
 
 .navbar-brand{
-    padding: 10px;
+    padding: 5px;
 }
+
 .navbar-toggler{
     border: none;
 }
@@ -48,19 +51,6 @@ li{
     color: orange !important;
 }
 
-.dropdown-menu{
-    border:none;
-    padding: none;
-}
-
-.contsctMEPAgeLink{
-    padding: 0;
-}
-
-.scheduleApointment{
-    padding: 0;
-    margin-left: 0;
-}
 
 
 
@@ -68,7 +58,7 @@ li{
 
 /* ABOUT SECTION DECORATION */
 .aboutSection{
-    margin: 5% 5% 0 5%;
+    margin: 15% 5% 0 5%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -90,6 +80,7 @@ li{
     letter-spacing: 0.5px;
     width: 100%;
 }
+
 .highlightInOrange{
     color: orange;
 }
@@ -142,54 +133,73 @@ footer{
 
 /* MEDEA QUERIES */
 @media screen and (max-width:767px){
-    /* ABOUT SECTION DECORATION */
-.aboutSection{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    margin-left: 0;
-    margin-right: 0;
-}
+    *{
+        font-family: 'Oxygen', 'sans-serif';
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
 
-.aboutText{
-    margin-top: 5%;
-    text-align: center;
-    padding: 10px;
-}
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav{
+        margin: 1% 1%;
+        overflow: hidden;
+    }
+
+        /* ABOUT SECTION DECORATION */
+    .aboutSection{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .aboutText{
+        margin-top: 5%;
+        text-align: center;
+        padding: 10px;
+    }
 
 
-.aboutText h1{
-    font-size: 50px;
-    margin-bottom: 0;
-}
+    .aboutText h1{
+        font-size: 50px;
+        margin-bottom: 0;
+        overflow: hidden;
 
-.whymeSection{
-    text-align: center;
-    margin-top: 5%;
-    width: 100%;
-    margin-bottom: 10%;
-}
+    }
 
-.whymeHeader{
-    margin-top: 10%;
-    margin-bottom: -2%;
-}
+    .whymeSection{
+        text-align: center;
+        margin-top: 5%;
+        width: 100%;
+        margin-bottom: 10%;
+    }
 
-.whymeHeader h1{
-    font-size: 50px;
-    text-align: center;
-}
+    .whymeHeader{
+        margin-top: 10%;
+        margin-bottom: -2%;
+    }
 
-.whymeResons ul{
-    width: 100%;
-    padding-left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 5%;
-}
+    .whymeHeader h1{
+        font-size: 50px;
+        text-align: center;
+        overflow: hidden;
+    }
 
-footer{
-    margin-top: 20%;
-}
+    .whymeResons ul{
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
+
+    footer{
+        margin-top: 20%;
+    }
 }

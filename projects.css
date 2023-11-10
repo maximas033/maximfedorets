@@ -10,10 +10,13 @@ body{
 }
 /* NAVBAR DECORATION */
 nav{
-    margin: 0.5%;
+    margin: 0.5% 5.5%;
     vertical-align: center;
     color: black;
+    background-color: rgb(255, 243, 223);
+    border-radius: 15px;
 }
+
 
 .navbar-brand{
     padding: 10px;
@@ -68,7 +71,7 @@ li{
 
 
 .myworkSection{
-    margin-top: 2%;
+    margin-top: 10%;
     width: 100%;
     text-align: center;
 }
@@ -109,6 +112,7 @@ li{
 
 .container h4{
     margin-top: 2%;
+    overflow: hidden;
 }
 
 .container p{
@@ -151,43 +155,59 @@ footer{
 
 /* MEDEA QUERIES */
 @media screen and (max-width:767px){
+    *{
+        font-family: 'Oxygen', 'sans-serif';
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
 
-.myworkSection{
-    margin-top: 5%;
-    width: 100%;
-    text-align: center;
-}
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
 
-.myworkSection h1{
-    font-size: 50px;
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-    
-.myprojects{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    nav{
+        margin: 1% 1%;
+        overflow: hidden;
+    }
 
-.myprojects .cardCornerstone{
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
+    .myworkSection{
+        margin-top: 15%;
+        width: 100%;
+        text-align: center;
+    }
 
-.cardCornerstone .online{
-    width: 50%;
-}
+    .myworkSection h1{
+        font-size: 50px;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        overflow: hidden;
+    }
+        
+    .myprojects{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-.myprojects .cardDanielK{
-    width: 100%;
-    margin-bottom: 10%;
-}
+    .myprojects .cardCornerstone{
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
 
-.cardDanielK .not{
-    width: 50%;
-}
+    .cardCornerstone .online{
+        width: 50%;
+    }
+
+    .myprojects .cardDanielK{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .cardDanielK .not{
+        width: 50%;
+    }
 }
 
 #linkToTheWebsite{
