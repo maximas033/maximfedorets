@@ -1,0 +1,57 @@
+.eyes {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+  .eye {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pupil {
+    width: 25px;
+    height: 25px;
+    border-radius: 101px;
+    background-color: #000;
+  }
+
+  
+/* Add your CSS styles here */
+#error-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+      
+h1 {
+    font-size: 10rem;
+    color: #000000;
+    background-color: rgb(255, 243, 223);
+    width: 80%;
+    margin: 10% auto;
+    border-radius: 15px;
+}
+
+#go-back-btn {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 3%;
+    }
+      
+#go-back-btn:hover {
+    background-color: rgb(206, 136, 6);
+    }

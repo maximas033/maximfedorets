@@ -4,41 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 - Page Not Found</title>
-    <style>
-      /* Add your CSS styles here */
-      #error-container {
-        text-align: center;
-        font-family: Arial, sans-serif;
-      }
-      h1 {
-        font-size: 5rem;
-        color: #000000;
-      }
-      #go-back-btn {
-        background-color: orange;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        border-radius: 3%;
-      }
-      #go-back-btn:hover {
-        background-color: rgb(206, 136, 6);
-      }
-    </style>
+    <!-- link to css  --> 
+    <link rel="stylesheet" href="404.css" />
   </head>
   <body>
+    <section class="eyesSection">
+      <div class="eyes">
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+        <div class="eye">
+          <div class="pupil"></div>
+        </div>
+      </div>
+    </section>
     <div id="error-container">
       <h1>404</h1>
       <h3 style="font-weight: bold">
         Sorry, but it looks like the page you're looking for doesn't exist or
-        has been moved. We apologize for the inconvenience.
+        has been removed. We apologize for the inconvenience.
       </h3>
-
-      <p>Thank you for your patience and understanding.</p>
       <button id="go-back-btn">Go Back</button>
     </div>
     <script>
@@ -50,5 +35,6 @@
         });
       });
     </script>
+    <script src="eyetracking404.js"></script>
   </body>
 </html>
