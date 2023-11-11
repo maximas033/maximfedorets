@@ -16,6 +16,7 @@ nav{
     color: black;
     background-color: rgb(255, 243, 223);
     border-radius: 15px;
+    transition: transform 1.5s ease;
 }
 
 .navbar-brand{
@@ -147,6 +148,10 @@ footer{
     nav{
         margin: 1% 1%;
         overflow: hidden;
+    }
+
+    #buttonThreeline {
+        display: none;
     }
 
         /* ABOUT SECTION DECORATION */

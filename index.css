@@ -16,6 +16,7 @@ nav{
     color: black;
     background-color: rgb(255, 243, 223);
     border-radius: 15px;
+    transition: transform 1.5s ease;
 }
 
 .navbar-brand{
@@ -25,6 +26,19 @@ nav{
 .navbar-toggler{
     border: none;
 }
+
+#buttonThreeline{
+    /* ease in */
+    animation: fadeIn 1.8s;
+}
+/* Keyframes for  fading in */
+@keyframes fadeIn {
+    /* 0 - 50% */ 
+    0%, 50% {opacity: 0;}
+    /* 50% - 100% */
+    50%, 100% {opacity: 1;}
+}
+
 
 .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus{
     outline: none;
@@ -682,6 +696,10 @@ footer{
         margin: 1% 1%;
     }
 
+    #buttonThreeline {
+        display: none;
+    }
+  
     .welcomeSection{
         overflow-x: hidden;
         width: 100%;

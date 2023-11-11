@@ -11,6 +11,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- LINK TO CSS-->
     <link href="index.css" rel="stylesheet" type="text/css" />
     <!-- LINK TO GOOGLE FONTS -->
@@ -42,6 +43,15 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          id="buttonThreeline"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
             class="navbar-nav ms-auto mb-2 mb-lg-0"
@@ -119,7 +129,7 @@
           </div>
           <div class="content">
             <div class="details">
-              <h2>Design</h2>
+              <h2 id="top">Design</h2>
             </div>
             <div class="cardParagraph">
               <p>Designing a stunning and responsive website for you.</p>
@@ -134,7 +144,7 @@
           </div>
           <div class="content">
             <div class="details">
-              <h2>Develop</h2>
+              <h2 id="top">Develop</h2>
             </div>
             <div class="cardParagraph">
               <p>Developing a website that fits your needs and the looks.</p>
@@ -149,7 +159,7 @@
           </div>
           <div class="content">
             <div class="details">
-              <h2>Code</h2>
+              <h2 >Code</h2>
             </div>
             <div class="cardParagraph">
               <p>
@@ -289,6 +299,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- LINK TO JAVASCRIPT -->
+    <script src="navbarAnimation.js"></script>
     <script src="firebase.js"></script>
     <script src="OnloadWebsiteCheck.js"></script>
     <script src="contact.js"></script>
